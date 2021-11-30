@@ -26,7 +26,7 @@ beforeEach(async () => {
       arguments: [initialManufacturerArgs, "hello"],
     })
     .send({ from: accounts[0], gas: 3000000 });
-
+  console.log(typeof manufacturer.options.address);
   for (let i = 0; i < retailBuysProducts.length; i++) {
     await manufacturer.methods
       .buyProductFromManufacturer(retailBuysProducts[i].name)
