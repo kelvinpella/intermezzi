@@ -11,7 +11,7 @@ function App() {
   }
   return (
     <Router>
-      <div className="w-screen h-screen text-black font-Playfair px-2.5 flex flex-col justify-between">
+      <div className="w-screen h-screen text-black font-Playfair px-2.5 flex flex-col justify-between overflow-x-hidden">
         <div>
           <NavBar cartItems={cartItems} viewCartItemsHandler={viewCartItemsHandler}/>
           <Routes>

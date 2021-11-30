@@ -15,72 +15,72 @@ import Image14 from "./assets/14.jpg";
 
 export const products = [
   {
-    name: "Divina",
+    name: "DIVINA",
     price: 138,
     image: Image1,
   },
   {
-    name: "Tommy Hilfiger",
+    name: "TOMMY ",
     price: 97,
     image: Image12,
   },
   {
-    name: "Jane Leather",
+    name: " JANE",
     price: 435,
     image: Image3,
   },
   {
-    name: "Le Pliage",
+    name: "PLIAGE",
     price: 510,
     image: Image11,
   },
   {
-    name: "Jet Set",
+    name: "JET",
     price: 315,
     image: Image5,
   },
   {
-    name: "Coach Core",
+    name: "COACH",
     price: 375,
     image: Image6,
   },
   {
-    name: "Le Cuir",
+    name: "CUIR",
     price: 380,
     image: Image7,
   },
   {
-    name: "Reseau",
+    name: "RESEAU",
     price: 380,
     image: Image8,
   },
   {
-    name: "Sullivan",
+    name: "SULLIVAN",
     price: 517,
     image: Image9,
   },
   {
-    name: "Michael Michael",
+    name: "MICHALOU ",
     price: 435,
     image: Image10,
   },
   {
-    name: "Radley Woodland",
+    name: "RADLEY ",
     price: 418,
     image: Image4,
   },
   {
-    name: "Le Fouleane",
+    name: "FOULOUNE",
     price: 510,
     image: Image2,
   },
   {
-    name: "Large Marcy ",
+    name: "MARCY ",
     price: 448,
     image: Image13,
   },
   {
-    name: "Le Cest",
+    name: "CEST",
     price: 155,
     image: Image14,
   },

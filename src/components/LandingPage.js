@@ -28,6 +28,10 @@ const LandingPage = ({
           This season's latest
         </h1>
       </div>
+      <h2 className=" w-full  my-6  text-sm font-WorkSans  overflow-ellipsis overflow-hidden">
+        <span className="  font-bold  "> Store ID:</span>{" "}
+        0x5B38Da6a701c568545dCfcB03FcB875f56beddC4
+      </h2>
       <div className="  w-full flex products-center justify-between flex-wrap mb-3 ">
         {(!viewCartItems || cartItems.length === 0) &&
           products.map((product, index) => (
@@ -35,9 +39,7 @@ const LandingPage = ({
               <div className="w-4/5  m-auto  ">
                 <img src={product.image} alt="bag" className=" w-full " />
               </div>
-              <h2 className="   m-3 font-bold text-lg capitalize">
-                {product.name}
-              </h2>
+              <h2 className="   m-3  text-lg capitalize">{product.name}</h2>
               <p className="   m-3 font-bold text-base font-WorkSans">
                 ${product.price}
               </p>
@@ -51,7 +53,12 @@ const LandingPage = ({
               >
                 add to cart
               </button>
-              <Link to="" className="  text-black  block mb-2.5  font-WorkSans text-sm ">Is product genuine?</Link>
+              <Link
+                to=""
+                className="  text-black  block mb-2.5  font-WorkSans text-sm "
+              >
+                Is product genuine?
+              </Link>
               <hr className="  border-black max-w-70 m-auto" />
             </div>
           ))}
@@ -66,7 +73,7 @@ const LandingPage = ({
                   <img src={item.image} alt="bag" className=" w-full " />
                 </div>
                 <div className="inline-block align-middle">
-                  <h2 className="  w-full my-3 font-bold text-lg capitalize">
+                  <h2 className="  w-full my-3  text-lg capitalize">
                     {item.name}
                   </h2>
                   <p className=" w-full  my-3 font-bold text-base font-WorkSans">
