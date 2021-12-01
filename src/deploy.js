@@ -2,12 +2,12 @@ const HDWalletProvider = require("@truffle/hdwallet-provider");
 const Web3 = require("web3");
 const { mnemonic, infura } = require("./privateData");
 
-const { initialManufacturerArgs } = require("./manufacturerProducts");
+// const { initialManufacturerArgs } = require("./manufacturerProducts");
 const { retailBuysProducts } = require("./retailBuysProducts");
 const compiledManufacturer = require("./compiledContracts/Manufacturer.json");
 const compiledRetailStore = require("./compiledContracts/RetailStore.json");
 const manufacturerAbi = compiledManufacturer.abi;
-const manufacturerBytecode = compiledManufacturer.evm.bytecode.object;
+// const manufacturerBytecode = compiledManufacturer.evm.bytecode.object;
 const retailStoreAbi = compiledRetailStore.abi;
 
 let provider = new HDWalletProvider({

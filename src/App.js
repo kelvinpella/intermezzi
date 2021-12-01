@@ -21,7 +21,7 @@ function App() {
           />
           <Routes>
             <Route
-              exact
+           
               path="/"
               element={
                 <LandingPage
@@ -32,7 +32,7 @@ function App() {
                 />
               }
             />
-            <Route path="/verifyProduct/:name" element={<Manufacturer />} />
+            <Route path="verifyProduct/*" element={<Manufacturer />} />
           </Routes>
         </div>
         <footer className=" w-full p-2.5  text-center  text-xs   md:text-xl">

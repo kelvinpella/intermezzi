@@ -47,7 +47,6 @@ const LandingPage = ({
     } catch (error) {
       setLoading(false);
       setMessage("Transaction Failed!! This item is already sold.");
-      console.log(error);
     }
   };
   const buyProduct = (product = null) => {
