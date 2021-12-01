@@ -1,21 +1,17 @@
 import React from "react";
 import Logo from "../assets/logo.svg";
-import Menu from "../assets/menu.svg";
 import Cart from "../assets/cart.svg";
 
 const NavBar = ({ cartItems, viewCartItemsHandler }) => {
   return (
-    <div className="w-full flex items-center justify-between pt-3 mb-8 bg-white">
+    <div className="w-full flex items-center justify-between pt-3 mb-8 bg-white ">
       <nav>
-        <div className="inline-block mr-3.5 align-middle">
-          <img src={Menu} alt="menu" />
-        </div>
         <div className="inline-block m-auto align-middle">
           <img src={Logo} alt="logo" />
         </div>
       </nav>
-      <nav>
-        <div className="inline-block ml-3.5  align-middle relative">
+      <nav className="pr-px ">
+        <div className="inline-block   align-middle relative">
           <img src={Cart} alt="cart" />
           {cartItems.length > 0 && (
             <div

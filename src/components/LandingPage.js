@@ -81,20 +81,20 @@ const LandingPage = ({
               <div className="w-4/5  m-auto  ">
                 <img src={product.image} alt="bag" className=" w-full " />
               </div>
-              <h2 className="   m-3  text-lg capitalize">{product.name}</h2>
+              <h2 className="   m-3  text-lg capitalize ">{product.name}</h2>
               <p className="   m-3 font-bold text-base font-WorkSans">
                 ${product.price}
               </p>
 
               <button
                 onClick={() => buyProduct(product)}
-                className=" bg-black text-white py-2.5 px-4 uppercase mb-3 font-WorkSans text-sm "
+                className=" bg-black hover:bg-gray-800 text-white py-2.5 px-4 uppercase mb-3 font-WorkSans text-sm "
               >
                 buy now
               </button>
               <button
                 onClick={() => addToCartHandler(product)}
-                className=" bg-gray-200 text-black py-2.5 px-4 mb-3  uppercase   font-WorkSans text-sm "
+                className=" bg-gray-200 hover:bg-gray-300 text-black py-2.5 px-4 mb-3  uppercase   font-WorkSans text-sm "
               >
                 add to cart
               </button>
@@ -124,24 +124,24 @@ const LandingPage = ({
                   <p className=" w-full  my-3 font-bold text-base font-WorkSans">
                     ${item.price}
                   </p>
-                  <h3
+                  <button
                     onClick={() => removeCartItemHandler(index)}
                     className="w-full  uppercase mb-2 font-WorkSans text-sm underline"
                   >
                     remove
-                  </h3>
+                  </button>
                 </div>
               </div>
             ))}
             <button
               onClick={() => buyProduct()}
-              className="w-full bg-black text-white py-2.5 mb-3  uppercase  mx-auto font-WorkSans text-sm "
+              className="w-full bg-black hover:bg-gray-800 text-white py-2.5 mb-3  uppercase  mx-auto font-WorkSans text-sm "
             >
               buy now
             </button>
             <button
               onClick={() => setViewCartItems(false)}
-              className=" w-full bg-gray-200 text-black py-2.5  uppercase  mx-auto font-WorkSans text-sm "
+              className=" w-full bg-gray-200 hover:bg-gray-300 text-black py-2.5  uppercase  mx-auto font-WorkSans text-sm "
             >
               Back to shopping
             </button>

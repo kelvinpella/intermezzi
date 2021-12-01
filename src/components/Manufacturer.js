@@ -54,7 +54,7 @@ const Manufacturer = () => {
   }, [name]);
 
   return (
-    <div className=" absolute top-0 left-0 w-full h-full  bg-white  text-gray-900 font-WorkSans">
+    <div className=" absolute top-0 left-0 w-full h-full  bg-white  text-gray-900 font-WorkSans z-50">
       <h1 className="my-10 text-center text-lg font-bold ">
         This page represents Manufacturer's website.
       </h1>
@@ -73,7 +73,7 @@ const Manufacturer = () => {
       ></input>
       <button
         onClick={verifyProduct}
-        className=" bg-black text-white py-2.5 px-4 uppercase mb-3 font-WorkSans text-sm "
+        className=" bg-black hover:bg-gray-800 text-white py-2.5 px-4 uppercase mb-3 font-WorkSans text-sm "
       >
         Verify
       </button>
@@ -88,7 +88,7 @@ const Manufacturer = () => {
             <h1 className=" text-center w-full  my-2  text-sm font-WorkSans  overflow-ellipsis overflow-hidden">
               {message}
             </h1>
-            <button className="w-full bg-black text-white py-2.5 mb-3  uppercase  mx-auto font-WorkSans text-sm ">
+            <button className="w-full bg-black hover:bg-gray-800 text-white py-2.5 mb-3  uppercase  mx-auto font-WorkSans text-sm ">
               <Link to="/">Ok</Link>
             </button>
           </>
