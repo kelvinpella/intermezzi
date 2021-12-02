@@ -2,15 +2,8 @@
 # Link -> https://intermezzi-16dd9.web.app/
 
 # Functionality:
-1) Connects all retail stores to manufacturers of the products they sell.
+Using blockchain, I have built a simple app ( Link -> https://intermezzi-16dd9.web.app/ ) trying to implement the idea of identifying fake products or scams from online retail stores. I have assumed the manufacturer will keep a record in the blockchain of all its products, addresses of retail stores with the products they own, and addresses of individuals with the products they have purchased from retail stores.
 
-2) Transactions are made through Ethereum blockchain.
+To keep the blockchain up to date, I have assumed that all retail stores build upon the manufacturer's smart contract. Meaning, the manufacturer oversees all transactions and can revert any transaction made on a product not owned by that retail store. That would protect individuals from fake listings they see in the stores.  In Successful transactions, ownership of the product moves from the store to that individual. Thus the blockchain is always up to date.
 
-3) Manufacturer monitors which products they have produced, 
-which product is at which retail store, or in case of individual, who owns what product.
-
-3) Owners are stored by addresses.
-
-4) Manufacturer states whether a product is genuine or fake once a unique name is provided to them. On top of that, they state where it is currently available.
-
-5) Manufacturer observes all transactions, and therefore you cannot do a transaction to a store that dont own the listed item. That means you are protected from scam.
+Assuming the name is unique to that product, if you pass it to the manufacturer,  it will return product information like where it currently belongs, its authenticity, etc. Then you can decide to make a transaction or not.
